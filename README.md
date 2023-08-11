@@ -29,3 +29,23 @@
 # Data Analysis
 
 ###### These Python notebooks process the data collected above and extract meaningful results using statistical models and natural language processing. These notebooks train a Republican and Democratic word embedding model, convert each Tweet into a sentence embedding, generate topics by clustering the sentence embedding, assign each tweet to a topic using the cluster means, asign Tweets an emotional valence using cosine similarity to a negative emotional valence vector, cluster 
+
+### Train Word Embeddings
+
+###### This folder contains 2 notebooks that train a word embedding each for Republican and Democratic tweets. Tweets are cleaned, tokenized, a vocabulary is choosen, and then ran through the word embedding model.
+
+### Create Sentence Embeddings
+
+###### These notebooks generate sentence embeddings for each Tweet. The sentence embedding essentially take a weighted average of the vectors associated with the tokens in each Tweet. This allows the Tweets to be located within the same vector space as the word embedding.
+
+### Topic Clustering
+
+###### This notebook contains the notebooks that generates the topics for Republicans and Democrats using a k-means cosine similairty algorithm. Each Tweet is then measured against all topic means for determine the cluster that it belongs to. Random samples of Tweets was used to validate topics.
+
+### Create Emotional Scores
+
+###### This methodology utilizes the word embeddings ability to identify similarities in word. By subtracting all the positive vectors from negative vectors we are able to create a vector that represents negative emotional valence. This vector is then measured against all Tweets to asign each to a negative score. Random samples of Tweets were analyzed to assure validity of model.
+
+### Modeling
+
+###### These notebooks create the final data frame for modeling which is at the individual user/weekly level. Per user/per week there are topic counts, and average emotional valence, and counts of Republican/Democratic elite Twitter acounts followed. I then ran a Fixed Effects model to see what the relationship was over time along with a Time Varying Effects model to see how this relationship changes over time.
