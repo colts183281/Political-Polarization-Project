@@ -6,3 +6,10 @@
 
 ###### This R code automated my collection process to a single function and was built on top of the tweetr package for accessing the Twitter API. The final function in this package identified all users that followed a list of political organizations, collected the timelines, followers, and friends of these users, and deidentified all PII that existed in accordance with UMass Amherst's Institutional Review Board. The code utilized Twitter's bearer tokens, which allowed for higher rate limits, and implemented parallel processing so that all ten bearer tokens were operating at once.
 
+### collect_data.R
+
+###### The function that automated the whole process. This function takes the name of the Republican and Democratic organizations, the key tied to the state that these organizations resided in, and the dat of data collection. This function ran the collection of timelines, friends, and followers in parallel.
+
+### create_functions.R and create_deid.R
+
+######
