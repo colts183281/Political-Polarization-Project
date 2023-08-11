@@ -28,4 +28,4 @@
 
 # Data Analysis
 
-######
+###### These Python notebooks process the data collected above and extract meaningful results using statistical models and natural language processing. These notebooks train a Republican and Democratic word embedding model, convert each Tweet into a sentence embedding, generate topics by clustering the sentence embedding, assign each tweet to a topic using the cluster means, asign Tweets an emotional valence using cosine similarity to a negative emotional valence vector, cluster 
