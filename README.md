@@ -16,4 +16,16 @@
 
 ### get_followers.R, get_friends.R, get_timelines.R
 
-###### These functions grabbed the data from the Twitter API using tweetr. 
+###### These functions grabbed the data from the Twitter API using tweetr. This code split the list of users into groups of 10 and ran the collection in parallel using my 10 bearer tokens.
+
+### deid_functions.R, alter_append.R
+
+###### These functions deidentified the user names in all files that were collected by generating random ids for each name. Keys were saved for later deidentification.
+
+### load_data.R
+
+###### Contains functions for loading data from their respective file paths and are used for analysis.
+
+# Data Analysis
+
+######
