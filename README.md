@@ -12,4 +12,8 @@
 
 ### create_functions.R and create_deid.R
 
-######
+###### These functions saved the output to their respective file paths and saved file by appending the date to the end of their name. This normalized storage for easy access.
+
+### get_followers.R, get_friends.R, get_timelines.R
+
+###### These functions grabbed the data from the Twitter API using tweetr. 
